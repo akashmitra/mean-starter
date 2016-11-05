@@ -1,0 +1,51 @@
+[2016-02-22 16:08:36.184] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:08:36.246] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:10:17.452] [INFO] console - Mongoose default connection disconnected
+[2016-02-22 16:10:24.516] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:10:24.642] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:15:19.211] [INFO] console - Mongoose default connection disconnected
+[2016-02-22 16:15:22.278] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:15:22.300] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:16:19.927] [INFO] console - Mongoose default connection disconnected
+[2016-02-22 16:16:23.857] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:16:23.917] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:43:26.861] [INFO] console - Mongoose default connection disconnected
+[2016-02-22 16:43:36.522] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:43:36.581] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:45:51.157] [INFO] console - Mongoose default connection disconnected
+[2016-02-22 16:45:56.328] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:45:56.389] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:49:41.675] [TRACE] develop - Express server listening on port 80
+[2016-02-22 16:49:41.735] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-02-22 16:56:10.962] [INFO] console - Mongoose default connection disconnected
+[2016-03-10 12:56:11.956] [TRACE] develop - Express server listening on port 80
+[2016-03-10 12:56:11.979] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-03-10 13:27:26.343] [INFO] console - Mongoose default connection disconnected
+[2016-03-10 13:27:29.745] [TRACE] develop - Express server listening on port 80
+[2016-03-10 13:27:29.860] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-03-10 13:27:42.039] [ERROR] console - TypeError: newUser.save(...).exec is not a function
+    at Object.exports.addUserConnect (D:\WorkSpace\Nodepoc\helper\userHelper.js:20:6)
+    at Object.exports.addUser (D:\WorkSpace\Nodepoc\router\userRouter.js:7:26)
+    at D:\WorkSpace\Nodepoc\app.js:20:12
+    at callbacks (D:\WorkSpace\Nodepoc\node_modules\express\lib\router\index.js:161:37)
+    at param (D:\WorkSpace\Nodepoc\node_modules\express\lib\router\index.js:135:11)
+    at pass (D:\WorkSpace\Nodepoc\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (D:\WorkSpace\Nodepoc\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (D:\WorkSpace\Nodepoc\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\WorkSpace\Nodepoc\node_modules\express\node_modules\connect\lib\proto.js:199:15)
+    at multipart (D:\WorkSpace\Nodepoc\node_modules\express\node_modules\connect\lib\middleware\multipart.js:60:27)
+    at D:\WorkSpace\Nodepoc\node_modules\express\node_modules\connect\lib\middleware\bodyParser.js:57:9
+    at urlencoded (D:\WorkSpace\Nodepoc\node_modules\express\node_modules\connect\lib\middleware\urlencoded.js:48:27)
+    at D:\WorkSpace\Nodepoc\node_modules\express\node_modules\connect\lib\middleware\bodyParser.js:55:7
+    at IncomingMessage.<anonymous> (D:\WorkSpace\Nodepoc\node_modules\express\node_modules\connect\lib\middleware\json.js:77:11)
+    at emitNone (events.js:67:13)
+    at IncomingMessage.emit (events.js:166:7)
+[2016-03-10 13:28:32.368] [INFO] console - Mongoose default connection disconnected
+[2016-03-10 13:28:46.957] [TRACE] develop - Express server listening on port 80
+[2016-03-10 13:28:46.977] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-03-10 13:28:55.410] [INFO] console - Inside execture
+[2016-03-10 14:27:00.203] [INFO] console - Mongoose default connection disconnected
+[2016-11-05 20:37:38.881] [TRACE] develop - Express server listening on port 80
+[2016-11-05 20:37:38.909] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2016-11-05 20:38:15.461] [INFO] console - Inside execture
+[2016-11-05 20:39:43.133] [INFO] console - Mongoose default connection disconnected

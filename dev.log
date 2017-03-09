@@ -49,3 +49,17 @@
 [2016-11-05 20:37:38.909] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
 [2016-11-05 20:38:15.461] [INFO] console - Inside execture
 [2016-11-05 20:39:43.133] [INFO] console - Mongoose default connection disconnected
+[2017-03-09 16:04:23.436] [TRACE] develop - Express server listening on port 80
+[2017-03-09 16:04:24.456] [INFO] console - Mongoose default connection disconnected
+[2017-03-09 16:04:24.456] [INFO] console - Mongoose default connection error: MongoError: connect ECONNREFUSED 127.0.0.1:27017
+[2017-03-09 16:09:10.983] [INFO] console - Mongoose default connection disconnected through app termination
+[2017-03-09 16:09:13.372] [TRACE] develop - Express server listening on port 80
+[2017-03-09 16:09:13.395] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2017-03-09 16:18:31.366] [INFO] console - Mongoose default connection disconnected
+[2017-03-09 16:18:33.389] [TRACE] develop - Express server listening on port 80
+[2017-03-09 16:18:33.412] [INFO] console - Mongoose default connection open to mongodb://localhost:27017/mydb
+[2017-03-09 16:20:10.207] [INFO] console - Inside execture
+[2017-03-09 17:21:08.285] [INFO] console - Mongoose default connection disconnected
+[2017-03-09 18:19:44.901] [TRACE] develop - Express server listening on port 80
+[2017-03-09 18:19:45.921] [TRACE] develop - Mongoose default connection disconnected
+[2017-03-09 18:19:45.921] [TRACE] develop - Mongoose default connection error: MongoError: connect ECONNREFUSED 127.0.0.1:27017

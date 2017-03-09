@@ -1,36 +1,42 @@
-// Bring Mongoose into the app 
-var mongoose = require( 'mongoose' ); 
+(function () {
 
-// Build the connection string 
-var dbURI = 'mongodb://localhost:27017/mydb'; 
+    // Bring Mongoose into the app
+    var mongoose = require('mongoose');
+    var logger = require('../log');
 
-// Create the database connection 
-mongoose.connect(dbURI); 
+    // Build the connection string
+    var dbURI = 'mongodb://localhost:27017/mydb';
 
-// CONNECTION EVENTS
-// When successfully connected
-mongoose.connection.on('connected', function () {  
-  console.log('Mongoose default connection open to ' + dbURI);
-}); 
+    // Create the database connection
+    mongoose.connect(dbURI);
 
-// If the connection throws an error
-mongoose.connection.on('error',function (err) {  
-  console.log('Mongoose default connection error: ' + err);
-}); 
+    // CONNECTION EVENTS
+    // When successfully connected
+    mongoose.connection.on('connected', function () {
+        logger.trace('Mongoose default connection open to ' + dbURI);
+    });
 
-// When the connection is disconnected
-mongoose.connection.on('disconnected', function () {  
-  console.log('Mongoose default connection disconnected'); 
-});
+    // If the connection throws an error
+    mongoose.connection.on('error', function (err) {
+        logger.trace('Mongoose default connection error: ' + err);
+    });
 
-// If the Node process ends, close the Mongoose connection 
-process.on('SIGINT', function() {  
-  mongoose.connection.close(function () { 
-    console.log('Mongoose default connection disconnected through app termination'); 
-    process.exit(0); 
-  }); 
-}); 
+    // When the connection is disconnected
+    mongoose.connection.on('disconnected', function () {
+        logger.trace('Mongoose default connection disconnected');
+    });
 
-// BRING IN YOUR SCHEMAS & MODELS // For example 
-require('./usermodel');
+    // If the Node process ends, close the Mongoose connection
+    process.on('SIGINT', function () {
+        mongoose.connection.close(function () {
+            logger.trace('Mongoose default connection disconnected through app termination');
+            process.exit(0);
+        });
+    });
+
+    // BRING IN YOUR SCHEMAS & MODELS // For example
+    require('./usermodel');
+
+}());
+
 

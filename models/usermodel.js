@@ -1,18 +1,27 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+(function () {
 
-// Create a schema
-var userSchema = new Schema({
-    username: String,
-    password: String,
-    firstname: String,
-    lastname: String
-}, {
-    collection: 'users'
-});
+    var mongoose = require('mongoose');
+    var Schema = mongoose.Schema;
 
-// Create a model 
-var User = mongoose.model('Overview', userSchema);
+    // Create a schema
+    var userSchema = new Schema({
+        username: String,
+        password: String,
+        firstname: String,
+        lastname: String
+    }, {
+        collection: 'users'
+    });
 
-// Make model available 
-module.exports = User;
+    // Create a model
+    var User = mongoose.model('Overview', userSchema);
+
+    // Make model available
+    module.exports = User;
+
+}());
+
+
+
+
+

@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html ng-app="NodePOCApp">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Node Test</title>
 </head>
 
-<body ng-controller="nodeCtrl">
+<body ng-controller="NodeController">
 
-    <form ng-submit="addUser()">
-        <div>
-            <label>Username : </label>
-            <input type="text" ng-model="username">
-        </div>
-        <br>
-        <br>
-        <div>
-            <label>First Name : </label>
-            <input type="text" ng-model="firstname">
-        </div>
-        <br>
-        <br>
-        <div>
-            <label>Last Name : </label>
-            <input type="text" ng-model="lastname">
-        </div>
-        <br>
-        <br>
-        <div>
-            <label>Password : </label>
-            <input type="password" ng-model="password">
-        </div>
-        <br>
-        <br>
-        <div>
-            <button type="submit">Add User</button>
-        </div>
-    </form>
+<form ng-submit="addUser()">
+    <div>
+        <label>Username : </label>
+        <input type="text" ng-model="username" title="username">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>First Name : </label>
+        <input type="text" ng-model="firstname" title="firstname">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>Last Name : </label>
+        <input type="text" ng-model="lastname" title="lastname">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>Password : </label>
+        <input type="password" ng-model="password" title="password">
+    </div>
+    <br>
+    <br>
+    <div>
+        <button type="submit">Add User</button>
+    </div>
+</form>
 
-    <!-- JavaScript Includes -->
-    <script src="script/angular.min.js"></script>
-    <script src="script/control.js"></script>
+<!-- JavaScript Includes -->
+<script src="script/angular.min.js"></script>
+<script src="script/control.js"></script>
 </body>
 
 </html>

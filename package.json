@@ -1,0 +1,28 @@
+{
+  "name": "mean-mongoose-starter",
+  "version": "1.0.1",
+  "description": "A starter pack for MEAN with mongoose integration",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "express": "^3.1.0",
+    "jquery": "^2.1.4",
+    "log4js": "^0.6.29",
+    "mongodb": "^2.0.48",
+    "mongoose": "^4.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashmitra/Node-Starter-Kit.git"
+  },
+  "author": "Akash Mitra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashmitra/Node-Starter-Kit/issues"
+  },
+  "homepage": "https://github.com/akashmitra/Node-Starter-Kit#readme"
+}

@@ -6,7 +6,7 @@
   "dependencies": {
     "angular": "^1.4.7",
     "express": "^3.1.0",
-    "jquery": "^2.1.4",
+    "jquery": "^3.0.0",
     "log4js": "^0.6.29",
     "mongodb": "^2.0.48",
     "mongoose": "^4.2.7"

@@ -1,11 +1,8 @@
-(function () {
+const logger = require('../log');
+const User = require('../models/usermodel');
 
-    // Injecting Logger Module
-    //var logger = require('../log');
-    var User = require('../models/usermodel');
-
-
-    exports.addUserConnect = function (req, res) {
+module.exports = {
+    addUserConnect: (req, res) => {
         var success;
 
         var newUser = new User({
@@ -15,21 +12,15 @@
             'lastname': req.body.lastname
         });
 
-
         newUser.save(function (err) {
             if (err) {
                 throw err;
             }
         })
             .then(function () {
-                console.log('Inside execture');
+                logger.trace('Inside execture');
                 req.body.status = "success";
                 res.end(JSON.stringify(req.body));
             });
-        
     }
-
-
-}());
-
-
+};

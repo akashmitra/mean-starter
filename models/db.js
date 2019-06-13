@@ -1,11 +1,11 @@
 (function () {
 
     // Bring Mongoose into the app
-    var mongoose = require('mongoose');
-    var logger = require('../log');
+    const mongoose = require('mongoose');
+    const logger = require('../log');
 
     // Build the connection string
-    var dbURI = 'mongodb://localhost:27017/mydb';
+    const dbURI = 'mongodb://localhost:27017/mydb';
 
     // Create the database connection
     mongoose.connect(dbURI);

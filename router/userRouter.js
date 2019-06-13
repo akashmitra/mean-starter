@@ -1,10 +1,9 @@
-(function () {
-    // Injecting Logger Module
-    var logger = require('../log');
-    var helper = require('../helper/userHelper');
+// Injecting Logger Module
+const logger = require('../log');
+const helper = require('../helper/userHelper');
 
-    exports.addUser = function (req, res) {
+module.exports = {
+    addUser: (req, res) => {
         var success = helper.addUserConnect(req, res);
     }
-
-}());
+};
